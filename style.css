@@ -1,0 +1,153 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 40px auto;
+  background-color: hsl(0, 0%, 98%);
+} 
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.title, h1 {
+  color: hsl(234, 12%, 34%);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.para {
+  color: hsl(229, 6%, 66%); 
+  margin: auto;
+  width: 40%;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.box {
+  margin: 20px 0;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 27%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box h3 {
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 10px;
+  font-size: 20px;  
+}
+
+.box p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+}
+
+.box img {
+  position: relative;
+  left: 70%;
+  height: 50px;
+}
+
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  position: relative;
+  left: 8%;
+  top: 160px;
+}
+
+.builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  position: relative;
+  left: 37%;
+  bottom: 180px;
+}
+
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  position: relative;
+  left: 37%;
+  bottom: 180px;
+}
+
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  position: relative;
+  left: 66%;
+  bottom: 482px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 100vw;
+    padding: 30px 20px;
+    display: flex;
+  }
+
+  .para {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .supervisor {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .builder {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+  .karma {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+  .calculator {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+}
